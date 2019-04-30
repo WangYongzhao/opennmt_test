@@ -1,0 +1,19 @@
+model_dir: run/
+
+data:
+  train_features_file: 
+    - Q_test_char.tsv
+    - Q_test_char.tsv
+  train_labels_file:  C_test_bpe.tsv
+  eval_features_file: 
+    - Q_test_char.tsv
+    - Q_test_char.tsv
+  eval_labels_file: C_test_bpe.tsv
+  source_words_vocabulary_1: src_vocab.txt
+  source_words_vocabulary_2: src_vocab.txt
+  target_words_vocabulary: tgt_vocab.txt
+
+infer:
+  n_best: 10
+  with_scores: true
+  with_alignments: null
